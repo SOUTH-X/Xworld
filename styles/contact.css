@@ -1,0 +1,237 @@
+body{
+            width:1500px;
+            background-image:url(/storage/emulated/0/Documents/HTML -CSS - Course/photos.html/logo.png);
+            z-index: 100;
+        }
+        
+          .preloader{
+            width: 1500px;
+            height:6000px;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            top:0;
+            left: 0;
+            overflow: hidden;
+            z-index: 100;
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .con-preloder{
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 99;
+        }
+        
+        .load1{
+            width: 100px;
+            display: flex;
+            animation:animateOne -0.5s linear 0.8s infinite alternate;
+        }
+        
+        .load2{
+            width:100px;
+            display: flex;
+            animation:animateTwo 0.8s linear 0.5s   infinite alternate;
+        }
+        
+        @keyframes animateOne{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#NaN0000;
+            }
+        }
+        
+        @keyframes animateTwo{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#000;
+            }
+        }
+        
+   
+        
+        @keyframes fadeOut {
+        0%{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+            100%{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        .logo{
+            width:180px;
+            margin-top:30px;
+        }
+        
+        .last-section{
+            display:grid;
+          grid-template-columns:1fr 1fr;
+          column-gap:60px;
+          row-gap:20px;
+          background-color:red;
+          margin-top:90px;
+          width:1500px;
+          height:300px;
+        }
+        
+        .social-handle{
+            display:inline-block;
+            height:250px;
+            width:150px;
+            margin-left:40px;
+            margin-top:30px;
+            padding-left:30px;
+              justify-content:center;
+              background-color:pink;
+        }
+        
+        .last-txt{
+            font-weight:bold;
+                  font-size:30px;
+                  font-family:Arial;
+                  text-align: center;
+        }
+        
+        .emailtx{
+            color:white;
+            font-size:30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        @media all and (max-width:2560px) {
+           body{
+               width:100%;
+           }
+           
+               .preloader{
+            width: 100%;
+            }
+            
+     
+                 }
+        
+        @media all and (max-width:1440px) {
+           body{
+               width:100%;
+           }
+           
+               .preloader{
+            width: 100%;
+            }
+            
+               }
+        
+        @media all and (max-width:1024px) {
+           body{
+               width:100%;
+           }
+           
+               .preloader{
+            width: 100%;
+            }
+            
+               }
+        
+       @media all and (max-width:768px) {
+           body{
+               width:100%;
+           }
+           
+               .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 80px;
+            }
+           
+           .last-section{
+               width:100%;
+           }
+          
+          .logo{
+              width:120px;
+          }
+       }
+       
+          @media all and (max-width:435px) {
+           body{
+               width:100%;
+           }
+           
+               .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 50px;
+            }
+           
+           .last-section{
+               width:100%;
+               display:flex;
+               flex-direction:column;
+               height:700px;
+           }
+          
+          .logo{
+              width:80px;
+          }
+       }
+       
+       
+          @media all and (max-width:375px) {
+           body{
+               width:100%;
+           }
+           
+               .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 30px;
+            }
+           
+           .last-section{
+               width:100%;
+               display:flex;
+               flex-direction:column;
+               height:700px;
+           }
+          
+          .logo{
+              width:80px;
+          }
+       }
+            
+            

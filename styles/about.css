@@ -1,0 +1,385 @@
+body{
+            width: 1500px;
+            height: 3600px;
+            background: conic-gradient(yellow, black);
+        }
+        
+          .preloader{
+            width: 1500px;
+            height:6000px;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            top:0;
+            left: 0;
+            overflow: hidden;
+            z-index: 100;
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .con-preloder{
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 99;
+        }
+        
+        .load1{
+            width: 100px;
+            display: flex;
+            animation:animateOne -0.5s linear 0.8s infinite alternate;
+        }
+        
+        .load2{
+            width:100px;
+            display: flex;
+            animation:animateTwo 0.8s linear 0.5s   infinite alternate;
+        }
+        
+        @keyframes animateOne{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#NaN0000;
+            }
+        }
+        
+        @keyframes animateTwo{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#000;
+            }
+        }
+        
+   
+        
+        @keyframes fadeOut {
+        0%{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+            100%{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        
+        .header{
+            display: flex;
+            flex-direction: row;
+            height: 380px;
+            position:relative;        
+            z-index:100;
+            background:url(/storage/emulated/0/DCIM/100PINT/Pins/6.jpg);
+        } 
+        
+        .page-name{
+            font-size: 80px;
+            font-weight: bold;
+            font-family: poppins;
+            color: white;
+            text-align: center;
+            display: flex;
+            margin: auto;
+        }
+        
+        .about-desc{
+            display: flex;
+            flex-direction:column;
+            background-color: pink;
+            height:3000px;
+            margin:-2900px auto;
+            margin-left: 400px;
+        }
+        
+        .about-tx{
+            text-transform: uppercase;
+        font-weight:bold;
+        font-size:100px;
+        margin:20px auto;
+        }
+        
+        .side-bar{
+            display: flex;
+            flex-direction: column;
+            width:300px;
+            height:2900px;
+            background-color: greenyellow;
+            margin-top: 60px;
+        }
+        
+        .side-quote{
+            display: flex;
+            flex-direction: column;
+            height:370px;
+            margin-bottom: 120px;
+            justify-content: center;
+            align-items: center;
+            animation:fade-in 10s;
+        }
+        
+        @keyframes fade-in{
+            25%{
+                transform:scale(1,1)
+            }
+            50%{
+                transform:scale(1.5,1.5)
+            }
+            100%{
+                transform:scale(1,1)
+            }
+        }
+        
+        .side-img{
+            display: flex;
+            border: none;
+            border-radius:110px;
+            height: 170px;
+            width: 120px;
+            margin-top:20px;
+        }
+        
+        .about-text{
+            color: blueviolet;
+            text-justify: left;
+        }
+        
+        p{
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            color: red;
+        }
+        
+        .words{
+            display:flex;
+          flex-direction:row;
+          background: url('/storage/emulated/0/DCIM/100PINT/Pins/dd643c95c29702bdd4195d0b826b8a77.jpg');
+          background-color:#3ffff5;
+          height:180px;
+          align-items:space-between;
+          justify-content:space-between;
+          margin-top:3000px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:40px;
+                 font-weight:bold;
+                 text-transform: uppercase;
+                 animation:sliding 10s infinite;
+             }
+             @keyframes sliding{
+                 25%{
+                     margin-top:40px;
+                 }
+                 50%{
+                     margin-left:80px;
+                 }
+             }
+             
+             @media all and (max-width:2560px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+                     }
+             
+               @media all and (max-width:1024px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+                 
+                   .about-desc{
+                     height: 4300px;
+                     margin-left: 200px;
+                     margin-top: -2900px;
+                 }
+                 
+                 .side-bar{
+                     width:150px;
+                     height: 
+                 }
+                 
+                      .words-of-wisdom{
+                 font-size:20px;
+                 margin-top: auto;
+             }
+                    }
+             
+             @media all and (max-width:768px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+                 
+                 .about-desc{
+                     height: 2600px;
+                     margin-left: 200px;
+                     margin-top: -2600px;
+                 }
+                 
+                 .side-bar{
+                     width:150px;
+                     height: 2600px;
+                 }
+                 
+                 .side-quote{
+                     height: 250px;
+                     margin-top: 40px;
+                 }
+                 
+                 p{
+                     font-size: 30px;
+                 }
+                 
+                 .logo{
+                     width: 120px;
+                 }
+                 
+                    .words-of-wisdom{
+                 font-size:20px;
+                 margin-top: auto;
+             }
+                 }
+             
+                 @media all and (max-width:435px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 60px;
+            }
+                 
+                 .about-desc{
+                     height: 3600px;
+                     margin-left: 90px;
+                     margin-top: -2000px;
+                 }
+                 
+                 .about-tx{
+                     font-size: 50px;
+                 }
+                 
+                 .side-bar{
+                     width:70px;
+                     height: 2000px;
+                 }
+                 
+                    .side-img{                    
+            width: 50px;
+        }
+        
+                 
+                 .side-quote{
+                     height: 150px;
+                     margin-top: 40px;
+                 }
+                 
+                 p{
+                     font-size: 30px;
+                 }
+                 
+                 .logo{
+                     width: 80px;
+                 }
+                 
+                 .words{
+                     height: 80px;
+                 }
+                 
+                    .words-of-wisdom{
+                 font-size:8px;
+                 margin-top: auto;
+             }
+                 }
+                 
+                   
+             @media all and (max-width:375px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 30px;
+            }
+                 
+                 .about-desc{
+                     height: 3600px;
+                     margin-left: 70px;
+                     margin-top: -1900px;
+                 }
+                 
+                 .side-bar{
+                     width:60px;
+                     margin-left: 0;
+                     height: 1900px;
+                 
+                 .side-quote{
+                     height: 90px;
+                     margin-top: 40px;
+                     animation: none;
+                 }
+                 
+                 .side-img{
+                    width: 40px;
+                  }
+        
+                 p{
+                     font-size: 8px;
+                     font-weight:none;
+                 }
+                 
+                 .logo{
+                     width: 80px;
+                 }
+                 
+                    .words-of-wisdom{
+                 font-size:20px;
+                 margin-top: auto;
+             }
+                 }

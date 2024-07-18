@@ -1,0 +1,497 @@
+body{
+            width: 1500px;
+            height: 100%;
+            background:linear-gradient(
+                black, yellow
+            );
+        }
+        
+          .preloader{
+            width: 1500px;
+            height:6000px;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            top:0;
+            left: 0;
+            overflow: hidden;
+            z-index: 100;
+            animation: fadeOut 12s;
+            animation-fill-mode: forwards;
+        }
+        
+        .con-preloder{
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 99;
+        }
+        
+        .load1{
+            width: 100px;
+            display: flex;
+            animation:animateOne -0.5s linear 0.8s infinite alternate;
+        }
+        
+        .load2{
+            width:100px;
+            display: flex;
+            animation:animateTwo 0.8s linear 0.5s   infinite alternate;
+        }
+        
+        @keyframes animateOne{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#NaN0000;
+            }
+        }
+        
+        @keyframes animateTwo{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#000;
+            }
+        }
+        
+   
+        
+        @keyframes fadeOut {
+        0%{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+            100%{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        .header{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            height: 380px;
+            background-image: url(/storage/emulated/0/DCIM/100PINT/Pins/7.jpg);
+            z-index: 100;
+        }
+        
+        .page-name{
+            text-transform: uppercase;
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 80px;
+            color: white;
+            margin: 100px auto;
+        }
+        
+           .side-bar{
+            display: flex;
+            flex-direction: column;
+            width:300px;
+            height:2500px;
+            background-color: greenyellow;
+            margin-top: 60px;
+        }
+        
+        .side-quote{
+            display: flex;
+            flex-direction: column;
+            height:370px;
+            background-color: 
+            margin-bottom: 120px;
+            justify-content: center;
+            align-items: center;
+            animation:anim 20s infinite;
+        }
+        
+        @keyframes anim{
+            25%{
+                margin-left: -160px;
+            }
+            50%{
+                margin-left: 160px;
+            }
+            75%{
+                margin-left: -160px;
+            }
+            100%{
+                margin-left: 160px;
+            }
+        }
+        
+        .side-img{
+            display: flex;
+            border: none;
+            border-radius:110px;
+            width: 120px;
+            margin-top:20px;
+        }
+        
+        p{
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            color: red;
+        }
+        
+        .about-desc{
+            display: flex;
+            flex-direction:column;
+            background-color: pink;
+            height:4500px;
+            margin:-2500px auto;
+            margin-left: 400px;
+        }
+        
+        .sev-img{
+            width:500px;
+        margin-left:30px;
+        float:right;
+        }
+        
+        .about-header{
+            text-transform: uppercase;
+        font-weight:bold;
+        font-size:100px;
+        margin:30px auto;
+        margin-left:50px;
+        }
+        
+        .words{
+            display:flex;
+          flex-direction:row;
+          background: url('/storage/emulated/0/DCIM/100PINT/Pins/dd643c95c29702bdd4195d0b826b8a77.jpg');
+          background-color:#3ffff5;
+          height:180px;
+          align-items:space-between;
+          justify-content:space-between;
+          margin-top:2800px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:40px;
+                 font-weight:bold;
+                 text-transform: uppercase;
+                 animation:sliding 10s infinite;
+             }
+             @keyframes sliding{
+                 25%{
+                     margin-top:40px;
+                 }
+                 50%{
+                     margin-left:80px;
+                 }
+             }
+             
+             .trade-desc,.invest-desc,.skill-desc{
+                 margin-bottom: 190px;
+             }
+             
+             @media all and (max-width:2560px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+             }
+             
+             @media all and (max-width:1440px) {
+                 body{
+                     width: 100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+             }
+             
+             @media all and (max-width:1024px) {
+                 body{
+                     width: 100%;
+                    }
+                    
+                        .preloader{
+            width: 100%;
+            }
+            
+                 
+                 .side-bar{
+                     width: 150px;
+                 }
+                 
+                 .about-desc{
+                     margin-left: 200px;
+                     height: 6200px;
+                 }
+             }
+                     
+                     
+             
+             @media all and (max-width:768px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                 .side-bar{
+                    width:200px;
+                }
+                
+                      .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 80px;
+            }
+                
+                .about-desc{
+                    margin-left:220px;
+                    height:5100px;
+                }
+                
+                .sev-img{
+                    width:400px;
+                    display:flex;
+                    margin-bottom: 30px;
+                }
+                
+                p{
+                    font-size: 30px;
+                }
+                
+                .skill-desc,.trade-desc,.invest-desc{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    align-items:space-between;
+                    height:1000px;
+                }
+                
+                .trade-desc{
+                    margin-top: 300px;
+                }
+                
+                .invest-desc{
+                    margin-top: 300px;
+                }
+                
+                .about-header{
+                    font-size:50px;
+                }
+                
+                .logo{
+                    width: 120px;
+                }
+                
+                .words{
+                    height:120px;background: ;
+                }
+                
+                 .words-of-wisdom{
+                 font-size:20px;
+                 margin-top: auto;
+             }
+                 }
+             
+                 @media all and (max-width:435px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+               .con-preloder{
+                margin-left: -60px;
+            }
+            
+            
+            .load1, .load2{
+                width: 50px;
+            }
+                 
+                 .side-bar{
+                    width:70px;
+                    height:1000px;
+                }
+                
+                    .side-quote{
+            height:170px;
+            animation:none;
+        }
+                
+                    .side-img{
+            width: 50px;
+        }
+                
+                .about-desc{
+                    margin-left:100px;
+                    margin-top:-1000px;
+                    height:5500px;
+                }
+                
+                .about-header{
+                   font-size:60px;
+                   margin-left:20px;
+                }
+                
+                .sev-img{
+                    width:300px;
+                    display:flex;
+                    margin-bottom: 30px;
+                }
+                
+                p{
+                    font-size: 30px;
+                }
+                
+                .skill-desc,.trade-desc,.invest-desc{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    align-items:space-between;
+                    height:1000px;
+                }
+                
+                .trade-desc{
+                    margin-top: 300px;
+                }
+                
+                .invest-desc{
+                    margin-top: 300px;
+                }
+                
+                .about-header{
+                    font-size:50px;
+                }
+                
+                .logo{
+                    width: 80px;
+                }
+                
+                .words{
+                    height:100px;
+                }
+                
+                 .words-of-wisdom{
+                 font-size:20px;
+                 margin-top: auto;
+             }
+                 }
+             
+              @media all and (max-width:375px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+               .con-preloder{
+                margin-left: -70px;
+            }
+            
+            
+            .load1, .load2{
+                width: 30px;
+            }
+                 
+                 .side-bar{
+                    width:60px;
+                    height:1000px;
+                }
+                
+                    .side-quote{
+            height:170px;
+            animation:none;
+        }
+                
+                    .side-img{
+            width: 30px;
+        }
+                
+                .about-desc{
+                    margin-left:70px;
+                    margin-top:-1000px;
+                    height:4200px;
+                }
+                
+                .about-header{
+                   font-size:60px;
+                   margin-left:20px;
+                }
+                
+                .sev-img{
+                    width:200px;
+                    display:flex;
+                    margin-bottom: 30px;
+                    margin-left:10px;
+                }
+                
+                p{
+                    font-size: 20px;
+                }
+                
+                .skill-desc,.trade-desc,.invest-desc{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    align-items:space-between;
+                    height:1000px;
+                }
+                
+                .trade-desc{
+                    margin-top: 350px;
+                }background: ;
+                
+                .invest-desc{
+                    margin-top: 350px;
+                }
+                
+                .about-header{
+                    font-size:50px;
+                }
+                
+                .logo{
+                    width: 70px;
+                    margin-top:40px;
+                }
+                
+                .words{
+                    height:70px;
+                }
+                
+                 .words-of-wisdom{
+                 font-size:8px;
+                 margin-top: auto;
+             }
+                 }

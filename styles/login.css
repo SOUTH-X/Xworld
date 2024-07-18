@@ -1,0 +1,446 @@
+    body{
+            width: 1500px;
+            background:conic-gradient(yellow, black, grey);
+        }
+        
+          .preloader{
+            width: 1500px;
+            height:6000px;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            top:0;
+            left: 0;
+            overflow: hidden;
+            z-index: 100;
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .con-preloder{
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        z-index: 99;
+        }
+        
+        .load1{
+            width: 100px;
+            display: flex;
+            animation:animateOne -0.5s linear 0.8s infinite alternate;
+        }
+        
+        .load2{
+            width:100px;
+            display: flex;
+            animation:animateTwo 0.8s linear 0.5s   infinite alternate;
+        }
+        
+        @keyframes animateOne{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#NaN0000;
+            }
+        }
+        
+        @keyframes animateTwo{
+            0%{
+                opacity:0;
+                fill:#fffff;
+            }
+            
+            100%{
+                opacity: 1;
+                fill:#000;
+            }
+        }
+        
+   
+        
+        @keyframes fadeOut {
+        0%{
+            opacity: 1;
+            visibility: visible;
+        }
+        
+            100%{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        .header{
+            height: 200px;
+            position: relative;
+            z-index: 100;
+            margin-bottom:600px;
+        }
+        
+        #background-vid{
+            width: 1500px;
+            position:absolute
+        }
+       
+        .logo{
+            width: 180px;
+            margin-top: 30px;
+            position: absolute;
+        }
+        
+        .form{
+            height: 200px;
+            width:250px;
+            background-color: whitesmoke;
+            position: absolute;
+            margin-top:200px;
+            margin-left: 650px;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+        
+        #email-box, #pass-box{
+            height: 20px;
+        }
+        
+        #email-box{
+            margin-bottom: 30px;
+        }
+        
+        #login{
+            height: 30px;
+            border-radius: 8px;
+        }
+        
+           .sec-line{
+            display:flex;
+    flex-direction:row;
+    padding-left:500px;
+        }
+        
+        .ins{
+            text-transform:uppercase;
+        font-family:Arial;
+        font-weight:bold;
+        font-size:80px;
+        text-align: center;
+        background-color:#00ffff;
+        color:#ff00de;
+        }
+        
+        .pic-ins{
+            width:1300px;
+    height:1000px;
+    margin:100px auto;
+    background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/1.jpg);
+    animation:slide 50s infinite;
+        }
+        
+        @keyframes slide{
+            0%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/1.jpg);
+            }
+            10%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/9.jpg);
+            }
+            20%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/8.jpg);
+            }
+            30%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/7.jpg);
+            }
+            40%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/6.jpg);
+            }
+            50%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/5.jpg);
+            }
+            60%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/4.jpg);
+            }
+            70%{
+                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/3.jpg);
+            }
+            80%{
+               background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/2.jpg);
+            }
+        }
+        .words{
+            display:flex;
+          flex-direction:row;
+          background: url('/storage/emulated/0/DCIM/100PINT/Pins/dd643c95c29702bdd4195d0b826b8a77.jpg');
+          background-color:#3ffff5;
+          height:180px;
+          align-items:space-between;
+          justify-content:space-between;
+          margin-top:40px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:40px;
+                 font-weight:bold;
+                 text-transform: uppercase;
+                 animation:sliding 10s infinite;
+             }
+             @keyframes sliding{
+                 25%{
+                     margin-top:40px;
+                 }
+                 50%{
+                     margin-left:80px;
+                 }
+             }
+             
+             @media all and (max-width:2560px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+                 
+                  #background-vid{
+            width: 100%;
+                    }
+             
+             @media all and (max-width:1440px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+                 
+                  #background-vid{
+            width: 100%;
+                    }
+        
+           .sec-line{
+    padding-left:200px;
+        }
+        
+        
+        .words{
+          height:180px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:40px;
+                 }
+        
+             }
+             
+             
+             @media all and (max-width:1024px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+                 
+                  #background-vid{
+            width: 100%;
+                    }
+                    
+                    .form{
+                        margin-left: 350px;
+                    }
+                    
+              
+        
+           .sec-line{
+    padding-left:200px;
+        }
+        
+        .ins{
+        font-size:50px;
+        }
+        
+        .pic-ins{
+            width:800px;
+    height:700px;
+    }
+        .words{
+          height:120px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:20px;
+                 }
+        
+             }
+             
+             @media all and (max-width:768px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            }
+            
+            .load1, .load2{
+                width: 80px;
+            }
+            
+                 
+                  #background-vid{
+            width: 100%;
+                    }
+                    
+                  .logo{
+            width: 120px;
+        }
+        
+           .form{
+            margin-left: 200px;
+        }
+        
+           .sec-line{
+    padding-left:200px;
+        }
+        
+        .ins{
+        font-size:50px;
+        }
+        
+        .pic-ins{
+            width:800px;
+    height:700px;
+    }
+        .words{
+          height:120px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:20px;
+                 }
+        
+             }
+             
+             @media all and (max-width:435px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 50px;
+            }
+                 
+                 .header{
+                     height:200px;
+                 }
+                 
+                  #background-vid{
+                  display:none;
+                  height:200px;
+            width: 100%;
+                    }
+                    
+                  .logo{
+            width: 80px;
+        }
+        
+           .form{
+            margin-left: 100px;
+        }
+        
+           .sec-line{
+    padding-left:50px;
+        }
+        
+        .ins{
+        font-size:35px;
+        }
+        
+        .pic-ins{
+            width:700px;
+    height:600px;
+    }
+        .words{
+          height:100px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:10px;
+        }
+        
+             }
+             
+                  @media all and (max-width:375px) {
+                 body{
+                     width:100%;
+                 }
+                 
+                     .preloader{
+            width: 100%;
+            padding: auto;
+            }
+            
+            .load1, .load2{
+                width: 30px;
+            }
+                 
+                 .header{
+                     height:200px;
+                 }
+                 
+                  #background-vid{
+                  display:none;
+                  height:200px;
+            width: 100%;
+                    }
+                    
+                  .logo{
+            width: 80px;
+        }
+        
+           .form{
+            margin-left: 40px;
+        }
+        
+           .sec-line{
+    padding-left:30px;
+        }
+        
+        .ins{
+        font-size:35px;
+        }
+        
+        .pic-ins{
+            width:600px;
+    height:500px;
+    }
+        .words{
+          height:70px;
+        }
+        
+        .words-of-wisdom{
+                 font-size:8px;
+        }
+        
+             }

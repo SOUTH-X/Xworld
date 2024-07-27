@@ -15,7 +15,7 @@
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 12s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         

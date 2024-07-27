@@ -19,7 +19,7 @@ body{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 12s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         
@@ -91,7 +91,7 @@ body{
             height: 380px;
             position: relative;
             z-index: 100;
-            background-image: url(/storage/emulated/0/Download/bc7fa0d4104343dda64e66a28690c473.webp);
+            background-image: url(../storage/emulated/0/Download/bc7fa0d4104343dda64e66a28690c473.webp);
         }
         
          .page-name{

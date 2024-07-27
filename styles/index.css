@@ -1,5 +1,4 @@
-     body{
-            width: 1500px;
+      body{            width: 1500px;
         }
         
         .preloader{
@@ -318,7 +317,7 @@
              .words{
                  display:flex;
           flex-direction:row;
-          background: url('/storage/emulated/0/DCIM/100PINT/Pins/dd643c95c29702bdd4195d0b826b8a77.jpg');
+          background: url('../storage/emulated/0/DCIM/100PINT/Pins/dd643c95c29702bdd4195d0b826b8a77.jpg');
           background-color:#3ffff5;
           height:180px;
           align-items:space-between;

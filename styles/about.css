@@ -90,7 +90,7 @@ body{
             height: 380px;
             position:relative;        
             z-index:100;
-            background:url(/storage/emulated/0/DCIM/100PINT/Pins/6.jpg);
+            background:url(6.jpg);
         } 
         
         .page-name{

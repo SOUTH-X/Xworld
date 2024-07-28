@@ -89,7 +89,7 @@ body{            width: 1500px;
             flex-direction: row;
             position: relative;
             height: 380px;
-            background-image: url(/storage/emulated/0/DCIM/100PINT/Pins/7.jpg);
+            background-image: url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/13.jpg?raw=true');
             z-index: 100;
         }
         

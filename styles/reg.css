@@ -161,16 +161,16 @@ input{
             width:1300px;
     height:1000px;
     margin:300px auto;
-    background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/1.jpg);
+    background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/1.jpg?raw=true');
     animation:slide 50s infinite;
         }
         
         @keyframes slide{
             0%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/1.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/10.jpg?raw=true');
             }
             10%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/9.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/13.jpg?raw=true');
             }
             20%{
                 background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/8.jpg);

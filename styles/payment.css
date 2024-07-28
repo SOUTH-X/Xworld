@@ -155,34 +155,34 @@ body{
             width:1300px;
     height:1000px;
     margin:100px auto;
-    background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/1.jpg);
+    background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/2.jpg?raw=true');
     animation:slide 50s infinite;
         }
         
         @keyframes slide{
             0%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/1.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/22.jpg?raw=true');
             }
             10%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/9.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/18.jpg?raw=true');
             }
             20%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/8.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/19.jpg?raw=true');
             }
             30%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/7.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/15.jpg?raw=true');
             }
             40%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/6.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/17.jpg?raw=true');
             }
             50%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/5.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/10.jpg?raw=true');
             }
             60%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/4.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/13.jpg?raw=true');
             }
             70%{
-                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/3.jpg);
+                background-image:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/1.jpg?raw=true');
             }
             80%{
                background-image:url(/storage/emulated/0/DCIM/100PINT/Pins/2.jpg);

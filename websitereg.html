@@ -61,7 +61,7 @@
                 ">
             </div>
             <div>
-                <p style="
+                <p id="confirmpass" style="
                 font-family: Arial;
                 font-weight:bold;
                 color: darkblue;
@@ -73,7 +73,7 @@
                 ">
             </div>
            
-                <button type="submit" style="
+                <button type="submit" id="signup" disabled="disabled" style="
             display:flex;
             border-radius:8px;
             border:none;
@@ -141,5 +141,22 @@
            loader.className += " hidden";
        });
               </script>
+         <script>
+        
+        const signup = document.getElementById("signup");
+        const input = document.getElementById("confirmpass");
+        
+        
+        input.addEventListener("keyup", (e)=>{
+            const value = e.currentTarget.value;
+            if(value ==="") {
+                signup.disabled = true;
+            }
+            else {
+                signup.disabled = false;
+            }
+        });
+        
+    </script>
 </body>
 </html>

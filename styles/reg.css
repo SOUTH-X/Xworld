@@ -21,7 +21,7 @@ input{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 12s;
+            animation: fadeOut 32s;
             animation-fill-mode: forwards;
         }
         
@@ -82,7 +82,7 @@ input{
         }
         
             100%{
-                opacity: 0;
+                opacity: 1;
                 visibility: hidden;
             }
         }

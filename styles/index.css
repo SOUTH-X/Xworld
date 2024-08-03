@@ -14,7 +14,7 @@
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 20s;
+            animation: fadeOut 30s;
             animation-fill-mode: forwards;
         }
         
@@ -75,7 +75,7 @@
         }
         
             100%{
-                opacity: 0;
+                opacity: 1;
                 visibility: hidden;
             }
         }

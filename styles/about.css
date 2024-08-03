@@ -17,7 +17,7 @@ body{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 20s;
+            animation: fadeOut 30s;
             animation-fill-mode: forwards;
         }
         
@@ -78,7 +78,7 @@ body{
         }
         
             100%{
-                opacity: 0;
+                opacity: 1;
                 visibility: hidden;
             }
         }
@@ -220,7 +220,7 @@ body{
             
                  
                    .about-desc{
-                     height: 4300px;
+                     height: 5000px;
                      margin-left: 200px;
                      margin-top: -2900px;
                  }
@@ -247,7 +247,7 @@ body{
             
                  
                  .about-desc{
-                     height: 2600px;
+                     height: 5600px;
                      margin-left: 200px;
                      margin-top: -2600px;
                  }
@@ -296,7 +296,7 @@ body{
             }
                  
                  .about-desc{
-                     height: 3600px;
+                     height: 5600px;
                      margin-left: 90px;
                      margin-top: -2000px;
                  }
@@ -359,7 +359,7 @@ body{
             }
                  
                  .about-desc{
-                     height: 3600px;
+                     height: 5600px;
                      margin-left: 70px;
                      margin-top: -1900px;
                  }

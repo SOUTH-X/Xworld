@@ -18,7 +18,7 @@ body{            width: 1500px;
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 20s;
+            animation: fadeOut 30s;
             animation-fill-mode: forwards;
         }
         
@@ -79,7 +79,7 @@ body{            width: 1500px;
         }
         
             100%{
-                opacity: 0;
+                opacity: 1;
                 visibility: hidden;
             }
         }
@@ -157,7 +157,7 @@ body{            width: 1500px;
             display: flex;
             flex-direction:column;
             background-color: pink;
-            height:4500px;
+            height:5500px;
             margin:-2500px auto;
             margin-left: 400px;
         }

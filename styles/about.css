@@ -17,7 +17,7 @@ body{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 30s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         
@@ -247,7 +247,7 @@ body{
             
                  
                  .about-desc{
-                     height: 5600px;
+                     height: 5000px;
                      margin-left: 200px;
                      margin-top: -2600px;
                  }
@@ -296,7 +296,7 @@ body{
             }
                  
                  .about-desc{
-                     height: 5600px;
+                     height: 5000px;
                      margin-left: 90px;
                      margin-top: -2000px;
                  }
@@ -359,7 +359,7 @@ body{
             }
                  
                  .about-desc{
-                     height: 5600px;
+                     height: 5000px;
                      margin-left: 70px;
                      margin-top: -1900px;
                  }

@@ -4,6 +4,7 @@ body{
             background:conic-gradient(
                 purple, lightgreen
             );
+            box-sizing: border-box;
         }
         
           .preloader{
@@ -19,7 +20,7 @@ body{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 30s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         

@@ -2,6 +2,7 @@ body{
             width:1500px;
             background-image:url(/storage/emulated/0/Documents/HTML -CSS - Course/photos.html/logo.png);
             z-index: 100;
+            box-sizing:border-box;
         }
         
           .preloader{
@@ -17,7 +18,7 @@ body{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 30s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         

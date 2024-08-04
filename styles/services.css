@@ -3,6 +3,7 @@ body{            width: 1500px;
             background:linear-gradient(
                 black, yellow
             );
+     box-sizing: border-box;
         }
         
           .preloader{
@@ -18,7 +19,7 @@ body{            width: 1500px;
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 30s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         
@@ -157,7 +158,7 @@ body{            width: 1500px;
             display: flex;
             flex-direction:column;
             background-color: pink;
-            height:5500px;
+            height:5700px;
             margin:-2500px auto;
             margin-left: 400px;
         }
@@ -244,7 +245,7 @@ body{            width: 1500px;
                  
                  .about-desc{
                      margin-left: 200px;
-                     height: 6200px;
+                     height: 5200px;
                  }
              }
                      
@@ -353,7 +354,7 @@ body{            width: 1500px;
                 .about-desc{
                     margin-left:100px;
                     margin-top:-1000px;
-                    height:5500px;
+                    height:5000px;
                 }
                 
                 .about-header{
@@ -441,7 +442,7 @@ body{            width: 1500px;
                 .about-desc{
                     margin-left:70px;
                     margin-top:-1000px;
-                    height:5600px;
+                    height:5000px;
                 }
                 
                 .about-header{

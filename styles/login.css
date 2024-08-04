@@ -1,6 +1,7 @@
     body{
             width: 1500px;
             background:conic-gradient(yellow, black, grey);
+        box-sizing: border-box;
         }
         
           .preloader{
@@ -16,7 +17,7 @@
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 30s;
+            animation: fadeOut 20s;
             animation-fill-mode: forwards;
         }
         

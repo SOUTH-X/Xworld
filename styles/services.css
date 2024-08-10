@@ -152,7 +152,19 @@ body{            width: 1500px;
             font-size: 50px;
             text-align: center;
             color: red;
+            animation: appear linear forwards;
+            animation-timeline:view();
+            animation-range:entry 0% cover;
         }
+@keyframes appear{
+            50%{
+            transform:rotate(80deg);
+            }
+            100%{
+            transform:rotate(300deg);
+            }
+}
+        
         
         .about-desc{
             display: flex;

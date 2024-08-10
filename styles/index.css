@@ -170,6 +170,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
       background-color:#ff5415;
       margin-left:-580px;
       color:#91ff55;
+      cursor:pointer;
          }
          
          .about-button{
@@ -181,6 +182,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             width: 50px;
             margin-bottom: 20px;
             margin-right:20px;
+            cursor:pointer;
               }
               
               .shop-button{
@@ -191,6 +193,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             height: 30px;
             width: 50px;
             margin-bottom: 20px;
+            cursor: pointer;
                  
               }
               .gallery-button{
@@ -202,6 +205,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             width: 50px;
             margin-bottom: 20px;
             margin-left:20px
+            cursor: pointer;
               }
               .contact-button{
               background-color:#ff5415;
@@ -211,6 +215,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             height: 30px;
             width: 50px;
             margin-left:20px;
+            cursor: pointer;
               }
               
               .search-bar{
@@ -291,8 +296,20 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
    flex-direction:row;
    justify-content:center;
    margin-top:50px;
-   width:1500px;
+   width:100%;
+      animation:appear linear forwards;
+      animation-timeline:view();
+      animation-range:entry 0% cover;
+      overflow:hidden;
              }
+@keyframes appear{
+      from{
+            transform:translate(50px, 75px);
+      }
+      to{
+            transform:translate(25px, 50px);
+      }
+}
              
              .bottom-class{
                  display:grid;
@@ -344,7 +361,18 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
              }
              .sponsor{
                  cursor:pointer;
+                  animation:scale linear forwards;
+                   animation-timeline:view();
+                   animation-range:entry 0% cover;
              }
+@keyframes scale{
+      25%{
+            transform:scaleX(2);
+      }
+      50%{
+            transform:scaleX(1.5);
+      }
+}
              
              .home-made2{
                  display:flex;

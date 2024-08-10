@@ -168,13 +168,12 @@ body{
         }
 @keyframes appear{
             50%{
-            transform:rotate(80deg);
+            transform:translateY(50px)
             }
             100%{
-            transform:rotate(300deg);
+            transform:translateX(30px);
             }
 }
-        
         p{
             font-family: verdana;
             font-weight: bold;

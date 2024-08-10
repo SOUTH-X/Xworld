@@ -158,10 +158,10 @@ body{            width: 1500px;
         }
 @keyframes appear{
             50%{
-            transform:rotate(80deg);
+            transform: translateX(50px);
             }
             100%{
-            transform:rotate(300deg);
+            transform:translateY(30px);
             }
 }
         

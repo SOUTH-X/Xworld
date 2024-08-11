@@ -301,7 +301,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
    width:100%;
       animation:appear linear forwards;
       animation-timeline:view();
-      animation-range:entry 0% cover 40;
+      animation-range:entry 0% cover 40%;
       overflow:hidden;
              }
 @keyframes appear{
@@ -310,8 +310,8 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             transform:translateY(-100px);
       }
       to{
-            opacity:0;
-            transform:translate(-100px);
+            opacity:1;
+            transform:translateY(-100px);
       }
 }
              
@@ -843,7 +843,9 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             width: 100%;
             padding: auto;
             }
-            
+            .con-preloader{
+                  margin:auto;
+                  padding:auto;
                  
                  .load1, .load2{
                      width: 30px;
@@ -937,7 +939,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
-                 
+                 font-size:25px;
              }
              
              .dark{

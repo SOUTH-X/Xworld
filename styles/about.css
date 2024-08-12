@@ -20,7 +20,7 @@ body{
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 20s;
+            animation: fadeOut 10s;
             animation-fill-mode: forwards;
         }
         
@@ -94,6 +94,7 @@ body{
             position:relative;        
             z-index:100;
             background:url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/1.jpg?raw=true');
+            background-repeat: no-repeat;
         } 
         
         .page-name{
@@ -119,7 +120,7 @@ body{
             text-transform: uppercase;
         font-weight:bold;
         font-size:100px;
-        margin:20px auto;
+        margin:40px auto;
         }
         
         .side-bar{
@@ -166,7 +167,7 @@ body{
             color: blueviolet;
             text-justify: left;
             animation: appear linear forwards;
-            animation-timeline:view();
+            animation-timeline:scroll();
             animation-range:entry 0% cover 40%;
         }
 @keyframes appear{
@@ -199,17 +200,17 @@ body{
         }
         
         .words-of-wisdom{
-                 font-size:40px;
+                 font-size:30px;
                  font-weight:bold;
                  text-transform: uppercase;
                  animation:sliding 10s infinite;
              }
              @keyframes sliding{
                  25%{
-                     margin-top:40px;
+                     transform: translateY(40px);
                  }
                  50%{
-                     margin-left:80px;
+                     transform:translateY(80px);
                  }
              }
              
@@ -395,7 +396,7 @@ body{
                   }
         
                  p{
-                     font-size: 5px;
+                     font-size: 8px;
                      font-weight:none;
                  }
                  

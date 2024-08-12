@@ -17,7 +17,7 @@
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 20s;
+            animation: fadeOut 10s;
             animation-fill-mode: forwards;
         }
         
@@ -114,8 +114,8 @@
     .logo{
         display:flex;
          position: absolute;
-         margin-top:20px;
-         width:300px;
+         margin-top:30px;
+         width:150px;
     }
     
      
@@ -206,7 +206,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             height: 30px;
             width: 50px;
             margin-bottom: 20px;
-            margin-left:20px
+            margin-left:30px
             cursor: pointer;
               }
               .contact-button{
@@ -216,7 +216,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             border-radius:6px;
             height: 30px;
             width: 50px;
-            margin-left:20px;
+            margin-left:30px;
             cursor: pointer;
               }
               
@@ -300,7 +300,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
    margin-top:50px;
    width:100%;
       animation:appear linear forwards;
-      animation-timeline:view();
+      animation-timeline:scroll();
       animation-range:entry 0% cover 40%;
       overflow:hidden;
              }
@@ -356,6 +356,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
           flex-direction:row;
           background: url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef126382cb1964fb0ca49c4bbd5b.jpg?raw=true');
           background-color:#3ffff5;
+            background-repeat:no-repeat;
           height:180px;
           align-items:space-between;
           justify-content:space-between;
@@ -371,10 +372,10 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
              
              @keyframes sliding{
                  25%{
-                     margin-top:40px;
+                     transform:translateY(40px);
                  }
                  50%{
-                     margin-left:80px;
+                     transform:translateY(80px);
                  }
              }
              .sponsor{
@@ -704,7 +705,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
             }
             
             .load1, .load2{
-                width: 50px;
+                width: 40px;
             }
                  
                  .overall{
@@ -794,7 +795,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
              .alt-txt1,.alt-txt2,.alt-txt3{
                  text-align:left;
                  justify-text:left;
-                   font-size:8px;
+                   font-size:15px;
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
@@ -940,7 +941,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
-                 font-size:5px;
+                 font-size:10px;
              }
              
              .dark{

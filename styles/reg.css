@@ -204,10 +204,10 @@ input{
              }
              @keyframes sliding{
                  25%{
-                     margin-top:40px;
+                     transform: translateX(40px);
                  }
                  50%{
-                     margin-left:80px;
+                     transform:translateX(80px);
                  }
              }
              

@@ -155,10 +155,10 @@ body{
              }
              @keyframes sliding{
                  25%{
-                     transform:translateY(40px);
+                     transform:translateX(40px);
                  }
                  50%{
-                     transform:translateY(80px);
+                     transform:translateX(80px);
                  }
              }
              

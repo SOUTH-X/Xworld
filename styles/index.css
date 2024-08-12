@@ -372,10 +372,10 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
              
              @keyframes sliding{
                  25%{
-                     transform:translateY(40px);
+                     transform:translateX(40px);
                  }
                  50%{
-                     transform:translateY(80px);
+                     transform:translateX(80px);
                  }
              }
              .sponsor{
@@ -795,7 +795,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
              .alt-txt1,.alt-txt2,.alt-txt3{
                  text-align:left;
                  justify-text:left;
-                   font-size:15px;
+                   font-size:35px;
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
@@ -941,7 +941,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
-                 font-size:10px;
+                 font-size:25px;
              }
              
              .dark{

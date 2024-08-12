@@ -19,7 +19,7 @@ body{            width: 1500px;
             left: 0;
             overflow: hidden;
             z-index: 100;
-            animation: fadeOut 20s;
+            animation: fadeOut 10s;
             animation-fill-mode: forwards;
         }
         
@@ -91,6 +91,7 @@ body{            width: 1500px;
             position: relative;
             height: 380px;
             background-image: url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/13.jpg?raw=true');
+            background-repeat: no-repeat;
             z-index: 100;
         }
         
@@ -124,17 +125,21 @@ body{            width: 1500px;
         }
         
         @keyframes anim{
-            25%{
-                margin-left: -160px;
+            0%{
+            opacity:0;
+                transform:scale(1.5);
             }
             50%{
-                margin-left: 160px;
+            opacity:1;
+                transform:scale(1);
             }
             75%{
-                margin-left: -160px;
+            opacity:1;
+                transform:scale(2);
             }
             100%{
-                margin-left: 160px;
+            opacity:0;
+                transform:scale(1.5);
             }
         }
         
@@ -153,7 +158,7 @@ body{            width: 1500px;
             text-align: center;
             color: red;
             animation: appear linear forwards;
-            animation-timeline:view();
+            animation-timeline:scroll();
             animation-range:entry 0% cover 40%;
         }
 @keyframes appear{
@@ -196,6 +201,7 @@ body{            width: 1500px;
           flex-direction:row;
           background: url('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef126382cb1964fb0ca49c4bbd5b.jpg?raw=true');
           background-color:#3ffff5;
+            background-repeat:no-repeat;
           height:180px;
           align-items:space-between;
           justify-content:space-between;
@@ -210,10 +216,10 @@ body{            width: 1500px;
              }
              @keyframes sliding{
                  25%{
-                     margin-top:40px;
+                     transform:translateY(40px);
                  }
                  50%{
-                     margin-left:80px;
+                     transform:translateY(80px);
                  }
              }
              
@@ -473,6 +479,7 @@ body{            width: 1500px;
                 
                 p{
                     font-size: 20px;
+            
                 }
                 
                 .skill-desc,.trade-desc,.invest-desc{

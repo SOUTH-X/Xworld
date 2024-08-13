@@ -216,10 +216,10 @@ body{            width: 1500px;
              }
              @keyframes sliding{
                  25%{
-                     transform:translateY(40px);
+                     transform:translateX(40px);
                  }
                  50%{
-                     transform:translateY(80px);
+                     transform:translateX(80px);
                  }
              }
              
@@ -462,7 +462,7 @@ body{            width: 1500px;
                 .about-desc{
                     margin-left:70px;
                     margin-top:-1000px;
-                    height:5000px;
+                    height:4500px;
                 }
                 
                 .about-header{

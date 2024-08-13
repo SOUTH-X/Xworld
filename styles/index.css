@@ -795,7 +795,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
              .alt-txt1,.alt-txt2,.alt-txt3{
                  text-align:left;
                  justify-text:left;
-                   font-size:35px;
+                   font-size:15px;
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
@@ -941,7 +941,7 @@ background:url ('https://github.com/SOUTH-X/Xworld/blob/main/photos.html/f1abef1
                  margin-top: 10px;
                  line-height:30px;
                  animation:none;
-                 font-size:25px;
+                 font-size:15px;
              }
              
              .dark{
